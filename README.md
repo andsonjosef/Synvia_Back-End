@@ -8,6 +8,9 @@
 
 # Uso
 
+Url Prod: https://synvia-back-end-test.herokuapp.com<br>
+Url Dev: localhost:3000<br>
+
 <h1 align="center">
      Usuário
 </h1>
@@ -15,7 +18,7 @@
 <h3>Cadastro</h3>
 
 <b>Metódo:</b> Post<br>
-<b>URL:</b> localhost:3000/auth/register<br>
+<b>URL:</b> ${url}/auth/register<br>
 <b>Corpo:</b>    {<br>
             "email": string,<br>
             "name": string,<br>
@@ -26,7 +29,7 @@
 <h3>Login</h3>
 
 <b>Metódo:</b> Post<br>
-<b>URL:</b> localhost:3000/auth/authenticate<br>
+<b>URL:</b> ${url}/auth/authenticate<br>
 <b>Corpo:</b>    {<br>
             "email": string,<br>
             "password": string<br>
@@ -41,7 +44,7 @@
 <h3>Verificar resultado do exame</h3>
 
 <b>Metódo:</b> Post<br>
-<b>URL:</b> localhost:3000/exams/testExamSample<br>
+<b>URL:</b> ${url}/exams/testExamSample<br>
 <b>Authorization:</b> token retornado ao criar o usuário ou ao fazer o login<br>
 <b>Corpo:</b>    {<br>
             "codigo_amostra": string,<br>
@@ -64,7 +67,7 @@
 
 <b>Metódo:</b> Get<br>
 <b>Authorization:</b> token retornado ao criar o usuário ou ao fazer o login<br>
-<b>URL:</b> localhost:3000/exams<br>
+<b>URL:</b> ${url}/exams<br>
 
 
 
