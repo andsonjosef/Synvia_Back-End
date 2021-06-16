@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "start": "tsc && node dist/server.js",
+    "start": "node dist/server.js",
     "build": "tsc",
-    "test": "SET NODE_ENV=test & jest"
+    "test": "SET NODE_ENV=test & jest",
+    "tsc": "tsc",
+    "postinstall": "npm run tsc"
   },
   "keywords": [],
   "author": "",
