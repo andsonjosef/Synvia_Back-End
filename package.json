@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/app.ts",
-    "start": "node src/app.ts",
-    "build": "sucrase ./src -d ./dist --transforms typescript,imports",
+    "dev": "nodemon src/server.ts",
+    "start": "tsc && node dist/server.js",
+    "build": "tsc",
     "test": "SET NODE_ENV=test & jest"
   },
   "keywords": [],

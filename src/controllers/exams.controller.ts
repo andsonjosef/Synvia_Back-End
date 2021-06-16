@@ -1,6 +1,6 @@
 
 import { Router } from 'express';
-import Exam, { ExamDocument } from '../../src/schemas/Exam';
+import Exam, { ExamDocument } from '../schemas/Exam';
 
 import authMiddleware from '../middlewares/auth.middleware';
 import { ExamInterface } from 'interfaces/exam.interface';

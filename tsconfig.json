@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "module": "commonjs",
     "allowJs": true,
     "outDir": "./dist",
@@ -29,6 +29,5 @@
   },
   "include": [
     "src",
-    "__tests__"
   ]
 }

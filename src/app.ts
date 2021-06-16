@@ -7,7 +7,6 @@ require('dotenv').config({
 });
 
 
-
 app.use(express.json());
 app.use(routes);
 
@@ -15,6 +14,5 @@ app.get('/', (request, response) => {
   response.send('Hello world!');
 });
 
-app.listen(process.env.PORT || 3000);
 
-export default app;
+export { app }

@@ -1,7 +1,5 @@
 import { ExamInterface } from 'interfaces/exam.interface';
 import mongoose, { Document, Schema } from 'mongoose';
-
-type Exam = Document & {};
 export interface ExamDocument extends mongoose.Document {
   id: string;
   userId: string;
@@ -9,6 +7,8 @@ export interface ExamDocument extends mongoose.Document {
   exam: ExamInterface;
   createdAt: Date;
 }
+
+type Exam = Document & {};
 
 const ExamSchema = new Schema({
   userId: {
